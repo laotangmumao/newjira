@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "json-server __json_server_mock__/db.json --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -42,19 +43,18 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.2",
-    "json-server": "^0.16.3",
+    "json-server": "^0.17.0",
     "lint-staged": "^11.1.2",
     "prettier": "2.4.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
